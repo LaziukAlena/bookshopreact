@@ -202,5 +202,31 @@ button:hover {
   justify-content: center; /* Центрируем иконку по горизонтали */
   padding: 10px 15px; /* Регулируем отступы для кнопок */
 }
+.filter-group {
+  display: flex;
+  align-items: center; /* Выровнять элементы по вертикали */
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-control {
+  display: flex;
+  align-items: center;
+  height: 40px; /* общая высота для всех контролов */
+  padding: 0 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  background-color: #fff;
+}
+
+.filter-control input,
+.filter-control select {
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
 
 
