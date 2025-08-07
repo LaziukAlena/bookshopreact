@@ -42,7 +42,8 @@ const App = () => {
       setLoading(true);
 
       try {
-        const res = await axios.get('http://localhost:3001/api/books', {
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/books`, {
+
           params: {
             locale: language,
             seed,
