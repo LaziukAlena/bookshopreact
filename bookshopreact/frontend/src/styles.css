@@ -1,0 +1,206 @@
+/* Стили для обложек книг */
+.book-cover {
+  width: 100%; /* Ширина изображения на всю доступную ширину */
+  height: 250px; /* Устанавливаем высоту обложки */
+  object-fit: cover; /* Обрезаем изображение, чтобы оно заполнило контейнер */
+  border-radius: 0.5rem; /* Скругляем углы */
+}
+
+/* Обёртка карточки книги */
+.book-card {
+  height: 100%; /* Высота карточки заполняет весь контейнер */
+  display: flex; /* Используем flexbox для удобного размещения элементов */
+  flex-direction: column; /* Элементы внутри карточки располагаются по вертикали */
+  justify-content: space-between; /* Разделяем элементы карточки на верхний и нижний */
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Добавляем тень для карточек */
+  border-radius: 0.5rem; /* Скругляем углы карточки */
+}
+
+/* Заголовки книг */
+.book-title {
+  font-size: 1.1rem; /* Размер шрифта для названия книги */
+  font-weight: 600; /* Жирное начертание для заголовка */
+  margin-top: 0.5rem; /* Отступ сверху */
+  color: #333; /* Темный цвет текста */
+  text-overflow: ellipsis; /* Обрезка текста с многоточием, если он слишком длинный */
+  overflow: hidden; /* Обрезаем текст, если он выходит за пределы */
+  white-space: nowrap; /* Оставляем текст в одной строке */
+}
+
+/* Адаптация модального окна */
+.modal-lg {
+  max-width: 800px; /* Устанавливаем максимальную ширину модального окна */
+}
+
+/* Галерея */
+.books-gallery {
+  display: grid; /* Используем сетку для галереи */
+  gap: 1rem; /* Промежуток между карточками */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Гибкая сетка, чтобы карточки занимали доступное место */
+}
+
+/* Стили для фильтров */
+.filter-label {
+  font-weight: 500; /* Среднее жирное начертание для лейблов */
+}
+
+.filter-control {
+  min-width: 100px; /* Минимальная ширина для элементов фильтра */
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .books-gallery {
+    grid-template-columns: 1fr; /* На малых экранах показываем одну карточку в ряду */
+  }
+
+  .filter-group {
+    flex-direction: column; /* Ставим элементы фильтров вертикально */
+    gap: 0.5rem; /* Промежуток между элементами */
+  }
+
+  .view-switcher {
+    justify-content: center; /* Центрируем элементы переключателя вида */
+  }
+
+  .table-responsive {
+    font-size: 0.9rem; /* Уменьшаем шрифт в таблице для удобства */
+  }
+}
+
+/* Стили для контейнера */
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Заголовок */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Стили для формы */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Стили для ползунка */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+/* Убираем метку с числовым значением рядом с ползунком */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #ddd;
+  height: 8px;
+  border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-track {
+  background: #ddd;
+  height: 8px;
+  border-radius: 5px;
+}
+
+input[type="range"]:disabled {
+  background: #ccc;
+}
+
+/* Стили для кнопки экспорта */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для таблицы */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f8f9fa;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Стили для таблицы при раскрывании строк */
+.table-secondary {
+  background-color: #f8f9fa;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn-group .btn {
+  border-radius: 0.25rem;
+  padding: 8px 12px;
+  font-size: 1rem;
+}
+
+.btn-group .btn-outline-primary {
+  background-color: transparent;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.btn-group .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.btn-group .btn-primary:hover,
+.btn-group .btn-outline-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.view-switcher {
+  display: flex;
+  justify-content: flex-end; /* Выравнивание кнопок вправо */
+  gap: 10px; /* Промежуток между кнопками */
+  margin-top: 10px; /* Дополнительный отступ сверху, если нужно */
+}
+
+.view-switcher .btn {
+  display: flex;
+  align-items: center; /* Центрируем иконку по вертикали */
+  justify-content: center; /* Центрируем иконку по горизонтали */
+  padding: 10px 15px; /* Регулируем отступы для кнопок */
+}
+
+

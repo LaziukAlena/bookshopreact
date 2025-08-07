@@ -1,0 +1,29 @@
+{
+  "seed": "Startwert",
+  "avgLikes": "Durchschnittliche Likes",
+  "avgReviews": "Durchschnittliche Rezensionen",
+  "exportCSV": "Als CSV exportieren",
+  "view": "Ansicht",
+  "table": "Tabelle",
+  "gallery": "Galerie",
+  "index": "#",
+  "title": "Titel",
+  "author": "Autor(en)",
+  "publisher": "Verlag",
+  "isbn": "ISBN",
+  "language": "Sprache",
+  "loading": "Wird geladen...",
+  "noMoreBooks": "Keine weiteren Bücher verfügbar.",
+  "noBooksFound": "Keine Bücher gefunden.",
+  "appTitle": "Bücher-Explorer",
+  "tableView": "Tabellenansicht",
+  "details": "details",
+  "likes": "Gefällt mir",
+  "reviews": "Rezensionen",
+  "galleryView": "Galerieansicht",
+  "description": "Beschreibung"
+}
+
+  
+  
+  

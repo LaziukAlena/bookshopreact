@@ -1,0 +1,30 @@
+{
+  "seed": "Seed",
+  "avgLikes": "Average Likes",
+  "avgReviews": "Average Reviews",
+  "exportCSV": "Export to CSV",
+  "view": "View",
+  "table": "Table",
+  "gallery": "Gallery",
+  "index": "#",
+  "title": "Title",
+  "author": "Author(s)",
+  "publisher": "Publisher",
+  "isbn": "ISBN",
+  "language": "Language",
+  "loading": "Loading...",
+  "noMoreBooks": "No more books available.",
+  "noBooksFound": "No books found.",
+  "appTitle": "Book Explorer",
+  "tableView": "Table View",
+  "details": "details",
+  "galleryView": "Gallery View",
+  "likes": "likes",
+  "reviews": "reviews",
+  "description": "description"
+}
+
+  
+  
+  
+  
