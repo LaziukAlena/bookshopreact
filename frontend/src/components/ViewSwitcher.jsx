@@ -9,14 +9,14 @@ const ViewSwitcher = ({ view, onChange }) => {
         className={`btn ${view === 'table' ? 'btn-primary' : 'btn-outline-primary'}`}
         onClick={() => onChange('table')}
       >
-        <FaTable /> {/* Иконка для таблицы */}
+        <FaTable /> 
       </button>
       <button
         type="button"
         className={`btn ${view === 'gallery' ? 'btn-primary' : 'btn-outline-primary'}`}
         onClick={() => onChange('gallery')}
       >
-        <FaBook /> {/* Иконка для галереи */}
+        <FaBook /> 
       </button>
     </div>
   );

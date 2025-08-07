@@ -26,15 +26,13 @@ app.get('/api/books', (req, res) => {
   for (let i = 0; i < count; i++) {
     const index = Number(start) + i;
 
-    // Индивидуальный seed для каждой книги
+  
     const rng = seedrandom(`${seed}_${locale}_${index}`);
 
-    // Генерация стабильных чисел
     const likeRandom = rng();
     const reviewRandom = rng();
-    const fakerSeed = Math.floor(rng() * 1_000_000); // новый seed для faker
+    const fakerSeed = Math.floor(rng() * 1_000_000); 
 
-    // Faker на нужной локали и seed’е
     const faker = new Faker({ locale: selectedLocale });
     faker.seed(fakerSeed);
 

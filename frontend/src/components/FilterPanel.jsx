@@ -52,7 +52,7 @@ const FilterPanel = ({
     <div className="mb-4">
       <div className="row g-3 align-items-end">
 
-        {/* LANGUAGE DROPDOWN */}
+
         <div className="col-md-3">
           <label className="form-label">{t('language')}</label>
           <Select
@@ -64,7 +64,7 @@ const FilterPanel = ({
           />
         </div>
 
-        {/* SEED */}
+       
         <div className="col-md-3">
           <label className="form-label">{t('seed')}</label>
           <div className="input-group">
@@ -80,7 +80,7 @@ const FilterPanel = ({
           </div>
         </div>
 
-        {/* LIKES */}
+       
         <div className="col-md-3">
           <label className="form-label">
             {t('avgLikes')}: {likesRatio.toFixed(1)}
@@ -96,7 +96,7 @@ const FilterPanel = ({
           />
         </div>
 
-        {/* REVIEWS */}
+        
         <div className="col-md-3">
           <label className="form-label">{t('avgReviews')}</label>
           <input
@@ -111,14 +111,14 @@ const FilterPanel = ({
         </div>
       </div>
 
-      {/* EXPORT BUTTON */}
+     
       <div className="mt-3">
         <button onClick={onExport} className="btn btn-primary">
           {t('exportCSV')}
         </button>
       </div>
 
-      {/* VIEW TOGGLE */}
+    
       <div className="mt-4 d-flex justify-content-center gap-3">
         <button
           className={`btn d-flex align-items-center gap-2 px-4 py-2 rounded-pill shadow-sm fw-semibold ${

@@ -45,7 +45,6 @@ const BooksGallery = ({ books }) => {
                 <div className="mt-2">
                   <div><strong>{t("isbn")}:</strong> {book.isbn}</div>
                   <div><strong>{t("publisher")}:</strong> {book.publisher}</div>
-                  {/* Убрали language и year */}
                 </div>
               </Collapse>
             </Card.Body>
